@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:id="@+id/im_laprof_avatar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="fitStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/user_aurum" />
+
+    <TextView
+        android:id="@+id/text_laprof_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Mike Willson"
+        android:textColor="#333232"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/im_laprof_avatar"
+        app:layout_constraintTop_toTopOf="@+id/im_laprof_avatar" />
+
+    <ImageView
+        android:id="@+id/imye"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_aurum_other" />
+
+    <TextView
+        android:id="@+id/text_la_prof_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Cool wallpapers!"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/im_laprof_avatar" />
+
+    <TextView
+        android:id="@+id/text_laprof_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="18 Feb at 15:30"
+        app:layout_constraintBottom_toBottomOf="@+id/im_laprof_avatar"
+        app:layout_constraintStart_toEndOf="@+id/im_laprof_avatar"
+        app:layout_constraintTop_toBottomOf="@+id/text_laprof_name" />
+    <ProgressBar
+        android:id="@+id/pb_aurum_bar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/main_aurum_photo"
+        app:layout_constraintEnd_toEndOf="@+id/main_aurum_photo"
+        app:layout_constraintStart_toStartOf="@+id/main_aurum_photo"
+        app:layout_constraintTop_toTopOf="@+id/main_aurum_photo" />
+    <ImageView
+        android:id="@+id/main_aurum_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_la_prof_data"
+        tools:srcCompat="@drawable/anmaurum_1" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/save_aurumb"
+        android:layout_width="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/main_aurum_photo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/pb_aurum_bar"
+        app:srcCompat="@drawable/ic_aurum_save" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
